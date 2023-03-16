@@ -72,52 +72,105 @@ h6 {
 .fin {
   display: none;
 }
-.main__top {
-  background-image: url(/images/bg-main-mobile.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.bg-img {
   background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  max-width: 375px;
+  margin: 0 auto;
+}
+.main__left {
+  background-image: url(/images/bg-main-mobile.png);
+  height: 33vh;
   margin-bottom: 6rem;
 }
-.card--mobile {
-  padding: 2rem 1.5rem;
+.card {
+  color: white;
   position: relative;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
 }
-.card-size-mobile {
-  width: 275px;
-  height: 150px;
+.card__size {
+  width: 260px;
+  height: 140px;
   border-radius: 5px;
-  background-size: cover;
 }
 .card__front {
   background-image: url(/images/bg-card-front.png);
-  padding: 0 1em;
-  position: absolute;
-  top: 50%;
-
-  color: white;
   font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
+  padding: 0.6em;
+  position: absolute;
+  top: 9rem;
+  left: 1.4rem;
+  z-index: 1;
+}
+.card__logo {
+  width: 2.6em;
+}
+.card__number {
+  padding: 2em 0 1em 0;
+  letter-spacing: 0.2em;
 }
 .card__name-date-group {
   display: flex;
   justify-content: space-between;
-  font-size: 0.6em;
-  padding: 1em;
-}
-.card__number {
-  padding-left: 0.6em;
-  letter-spacing: 0.15em;
-}
-.logo {
-  max-width: 2.8em;
-  padding-bottom: 3em;
-  padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 0.5rem;
 }
 
 .card__back {
   background-image: url(/images/bg-card-back.png);
-  margin-left: 3.6rem;
-  margin-bottom: 0.8rem;
+  margin-left: 3.2rem;
+  position: relative;
+  top: 1rem;
+}
+.card__cvc {
+  position: absolute;
+  top: 3.75rem;
+  left: 12.5rem;
+  font-size: 0.9rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+}
+
+.info {
+  margin: 0.8em;
+}
+.label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  margin: 0.3em 0.2em;
+}
+.input {
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 5px;
+  padding: 0.4em 0.6em;
+  margin-left: 0.5em;
+}
+.input::placeholder {
+  color: hsl(270, 3%, 87%);
+}
+.input--small {
+  max-width: 18%;
+}
+.input--cvc {
+  max-width: 57%;
+}
+.button {
+  text-decoration: none;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  padding: 1em 4em;
+  text-align: center;
+  margin: 2rem 0;
+  border-radius: 5px;
 }
